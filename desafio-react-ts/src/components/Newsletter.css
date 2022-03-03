@@ -7,12 +7,7 @@
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
 }
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 475px;
-}
+
 .newsletter-title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -62,5 +57,52 @@
   letter-spacing: 0.05em;
 
   color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    width: 100%;
+    padding: 0 25px;
+  }
+  .newsletter-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #303030;
+    margin-top: 22px;
+  }
+  .newsletter-content {
+    flex-direction: column;
+  }
+  .newsletter-input {
+    border-radius: 0;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .newsletter-button {
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 475px;
+  }
+  .newsletter-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .newsletter-button:hover {
+    background: #0180a3;
+  }
+  .newsletter-button:active {
+    background: #00c8ff;
+  }
 }
