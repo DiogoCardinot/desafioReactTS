@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-500: #00c8ff;
+  --blue-550: rgba(0, 200, 255,0.7);
+  --gray-100: #c4c4c4;
+  --gray-200: #f1f1f1;
+  --gray-250: rgba(241, 241, 241,0.8)
+  --gray-500: #292929;
+  --white: #ffffff;
+  --black: #000;
+}

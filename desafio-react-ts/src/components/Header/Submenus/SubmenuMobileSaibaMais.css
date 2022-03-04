@@ -1,0 +1,21 @@
+.submenu-mobile-saiba-mais {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px 0;
+}
+.submenu-mobile-saiba-mais-title {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 16px;
+}
+
+.submenu-mobile-saiba-mais-links {
+  padding: 6px 5px 0 5px;
+}
+
+.submenu-mobile-saiba-mais-link {
+  list-style: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2px;
+}
