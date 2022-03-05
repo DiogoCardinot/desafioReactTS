@@ -38,7 +38,16 @@ const FooterLinksMobile = () => {
               Institucional
             </button>
 
-            <span className={`footer-links-item-wrapper-span`}>+</span>
+            <span
+              className={`footer-links-item-wrapper-span ${
+                openInstitucional ? "see-more" : ""
+              }`}
+            ></span>
+            <span
+              className={`footer-links-item-wrapper-span-veja-menos ${
+                openInstitucional ? "see-less" : ""
+              }`}
+            ></span>
           </div>
           <div
             className={`footer-links-item-institutional-content ${
@@ -56,7 +65,16 @@ const FooterLinksMobile = () => {
             <button className="footer-links-item-wrapper-button">
               Dúvidas
             </button>
-            <span className="footer-links-item-wrapper-span">+</span>
+            <span
+              className={`footer-links-item-wrapper-span ${
+                openDuvidas ? "see-more" : ""
+              }`}
+            ></span>
+            <span
+              className={`footer-links-item-wrapper-span-veja-menos ${
+                openDuvidas ? "see-less" : ""
+              }`}
+            ></span>
           </div>
           <div
             className={`footer-links-item-duvidas-content ${
@@ -74,7 +92,16 @@ const FooterLinksMobile = () => {
             <button className="footer-links-item-wrapper-button">
               Fale Conosco
             </button>
-            <span className="footer-links-item-wrapper-span">+</span>
+            <span
+              className={`footer-links-item-wrapper-span ${
+                openFaleConosco ? "see-more" : ""
+              }`}
+            ></span>
+            <span
+              className={`footer-links-item-wrapper-span-veja-menos ${
+                openFaleConosco ? "see-less" : ""
+              }`}
+            ></span>
           </div>
           <div
             className={`footer-links-item-faleconosco-content ${

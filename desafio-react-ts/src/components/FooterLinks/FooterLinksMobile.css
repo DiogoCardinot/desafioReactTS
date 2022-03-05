@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 32px 28px 0;
+  padding: 32px 28px;
   justify-content: space-between;
 }
 .footer-links-mobile-items {
@@ -18,6 +18,7 @@
 .footer-links-mobile-item-wrapper-fale-conosco {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -35,6 +36,29 @@
   cursor: pointer;
 }
 
+.footer-links-item-wrapper-span-veja-menos,
+.footer-links-item-wrapper-span.see-more {
+  display: none;
+}
+
+.footer-links-item-wrapper-span,
+.footer-links-item-wrapper-span-veja-menos.see-less {
+  display: flex;
+  color: var(--black);
+  border-top: 2px solid;
+  width: 10px;
+}
+.footer-links-item-wrapper-span::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: currentColor; /*pega a cor que está no hamburguer button */
+  transform: rotate(90deg);
+  transition: 0.3s;
+  position: relative;
+  top: -2px;
+}
 .footer-links-item-institutional-content,
 .footer-links-item-duvidas-content,
 .footer-links-item-faleconosco-content {

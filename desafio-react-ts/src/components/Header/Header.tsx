@@ -71,7 +71,16 @@ const Header = () => {
                     }}
                   >
                     <button className="list-item-button-mobile">CURSOS</button>
-                    <div className="see-more-icon">+</div>
+                    <span
+                      className={`navbar-item-wrapper-span ${
+                        openCursosMobile ? "see-more" : ""
+                      }`}
+                    ></span>
+                    <span
+                      className={`navbar-item-wrapper-span-veja-menos ${
+                        openCursosMobile ? "see-less" : ""
+                      }`}
+                    ></span>
                   </div>
                   <div
                     className={`navbar-cursos ${
@@ -91,7 +100,16 @@ const Header = () => {
                     <button className="list-item-button-mobile">
                       SAIBA MAIS
                     </button>
-                    <div className="see-more-icon">+</div>
+                    <span
+                      className={`navbar-item-wrapper-span ${
+                        openSaibaMaisMobile ? "see-more" : ""
+                      }`}
+                    ></span>
+                    <span
+                      className={`navbar-item-wrapper-span-veja-menos ${
+                        openSaibaMaisMobile ? "see-less" : ""
+                      }`}
+                    ></span>
                   </div>
 
                   <div

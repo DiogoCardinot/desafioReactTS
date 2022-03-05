@@ -215,10 +215,35 @@
   }
   .nav-wrapper.active .close-navbar::before {
     transform: rotate(135deg);
+    background: var(--black);
   }
   .nav-wrapper.active .close-navbar::after {
     transform: rotate(-135deg);
+    background: var(--black);
     top: -7px;
+  }
+  .navbar-item-wrapper-span-veja-menos,
+  .navbar-item-wrapper-span.see-more {
+    display: none;
+  }
+
+  .navbar-item-wrapper-span,
+  .navbar-item-wrapper-span-veja-menos.see-less {
+    display: flex;
+    color: var(--black);
+    border-top: 2px solid;
+    width: 10px;
+  }
+  .navbar-item-wrapper-span::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: currentColor; /*pega a cor que está no hamburguer button */
+    transform: rotate(90deg);
+    transition: 0.3s;
+    position: relative;
+    top: -2px;
   }
 
   .list-items-mobile {

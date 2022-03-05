@@ -1,0 +1,81 @@
+.footer-desktop-wrapper {
+  background: var(--gray-600);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px 20px;
+}
+
+.footer-desktop-text-wrapper {
+  width: 100%;
+  max-width: 234px;
+}
+.footer-desktop-text {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+
+  color: var(--white);
+}
+
+.footer-desktop-payment-trust-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-desktop-payment-icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 12px;
+}
+
+.footer-desktop-payment-icon,
+.footer-desktop-trust-icon {
+  display: flex;
+  list-style: none;
+}
+
+.footer-desktop-trust-icons {
+  display: flex;
+  align-items: center;
+}
+.footer-desktop-trust-icons::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: var(--gray-100);
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+.footer-desktop-infos-development {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-desktop-infos-development-wrapper {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-desktop-infos-development-wrapper-powered-by {
+  margin-right: 16px;
+}
+.footer-desktop-infos-powered-by-developed-by {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  color: var(--white);
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-desktop-wrapper {
+    display: none;
+  }
+}
