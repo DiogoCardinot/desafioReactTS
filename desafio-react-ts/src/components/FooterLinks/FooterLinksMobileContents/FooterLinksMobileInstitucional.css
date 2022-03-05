@@ -1,0 +1,29 @@
+.footer-mobile-institucional-links-items-list {
+  padding-top: 2px;
+}
+.footer-mobile-institucional-links-item {
+  list-style: none;
+  padding: 2px 0;
+}
+.footer-mobile-institucional-links-link {
+  text-decoration: none;
+}
+
+.footer-mobile-institucional-links-link,
+.footer-mobile-institucional-links-u {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--gray-300);
+}
+
+.footer-mobile-institucional-links-span {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--gray-300);
+}

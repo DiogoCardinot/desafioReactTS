@@ -5,7 +5,7 @@ import searchIcon from "../../assets/images/search-icon.png";
 import cartIcon from "../../assets/images/cart-icon.png";
 
 import { SubMenuMobileCursos } from "./Submenus/SubmenuMobileCursos";
-import { SubMenuMobileCursosSaibaMais } from "./Submenus/SubmenuMobileSaibaMais";
+import { SubMenuMobileSaibaMais } from "./Submenus/SubmenuMobileSaibaMais";
 import { SubMenuDesktopCursos } from "./Submenus/SubmenuDesktopCursos";
 import { SubMenuDesktopSaibaMais } from "./Submenus/SubmenuDesktopSaibaMais";
 
@@ -99,7 +99,7 @@ const Header = () => {
                       openSaibaMaisMobile ? "active" : ""
                     }`}
                   >
-                    <SubMenuMobileCursosSaibaMais />
+                    <SubMenuMobileSaibaMais />
                   </div>
                 </li>
               </ul>

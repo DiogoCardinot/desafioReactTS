@@ -1,0 +1,29 @@
+.footer-mobile-faleconosco-links-items-list {
+  padding-top: 2px;
+}
+.footer-mobile-faleconosco-links-item {
+  list-style: none;
+  padding: 2px 0;
+}
+.footer-mobile-faleconosco-links-link {
+  text-decoration: none;
+}
+
+.footer-mobile-faleconosco-links-link,
+.footer-mobile-faleconosco-links-u {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--gray-300);
+}
+
+.footer-mobile-faleconosco-links-span {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: var(--gray-300);
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./SubmenuMobileSaibaMais.css";
 
-const SubMenuMobileCursosSaibaMais = () => {
+const SubMenuMobileSaibaMais = () => {
   return (
     <div className="submenu-mobile-saiba-mais">
       <h2 className="submenu-mobile-saiba-mais-title">Saiba Mais</h2>
@@ -16,4 +16,4 @@ const SubMenuMobileCursosSaibaMais = () => {
   );
 };
 
-export { SubMenuMobileCursosSaibaMais };
+export { SubMenuMobileSaibaMais };

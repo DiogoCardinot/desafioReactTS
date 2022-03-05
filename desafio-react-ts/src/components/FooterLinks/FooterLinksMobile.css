@@ -1,0 +1,64 @@
+.footer-links-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px 28px 0;
+  justify-content: space-between;
+}
+.footer-links-mobile-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links-mobile-item {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.footer-links-mobile-item-wrapper-institutional,
+.footer-links-mobile-item-wrapper-saiba-mais,
+.footer-links-mobile-item-wrapper-fale-conosco {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footer-links-item-wrapper-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gray-500);
+  background: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-links-item-institutional-content,
+.footer-links-item-duvidas-content,
+.footer-links-item-faleconosco-content {
+  display: none;
+}
+.footer-links-item-institutional-content.isopen,
+.footer-links-item-duvidas-content.isopen,
+.footer-links-item-faleconosco-content.isopen {
+  display: flex;
+}
+
+.footer-links-mobile-social-newtwork {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+}
+.footer-links-mobile-social-network-icon {
+  list-style: none;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .footer-links-mobile-wrapper {
+    display: none;
+  }
+}
