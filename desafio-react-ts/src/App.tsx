@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Header } from "./components/Header/Header";
+import { TopInfos } from "./components/TopInfos/TopInfos";
 import { Newsletter } from "./components/Newsletter/Newsletter";
 import { FooterLinksDesktop } from "./components/FooterLinks/FooterLinksDesktop";
 import { FooterLinksMobile } from "./components/FooterLinks/FooterLinksMobile";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <Header />
+      <TopInfos />
       <Newsletter />
       <FooterLinksDesktop />
       <FooterLinksMobile />

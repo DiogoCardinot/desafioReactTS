@@ -1,0 +1,149 @@
+.top-infos-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.top-infos-image {
+  display: block;
+  padding: 28px 0 78px 128px;
+}
+.top-infos-wrapper-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-infos-title {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  margin-bottom: 41px;
+}
+.top-infos-select {
+  display: flex;
+  justify-content: center;
+  padding: 0 132px 171px;
+}
+.top-infos-buttons-wrapper {
+  width: 100%;
+  max-width: 270px;
+}
+
+.top-infos-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 270px;
+  border-right: 2px solid var(--gray-600);
+}
+.top-infos-button-list {
+  list-style: none;
+}
+.top-infos-button-list.sobre,
+.top-infos-button-list.pagamento,
+.top-infos-button-list.entrega,
+.top-infos-button-list.troca,
+.top-infos-button-list.seguranca,
+.top-infos-button-list.contato {
+  background: var(--blue-500);
+}
+.top-infos-button.sobre,
+.top-infos-button.pagamento,
+.top-infos-button.entrega,
+.top-infos-button.troca,
+.top-infos-button.seguranca,
+.top-infos-button.contato {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white);
+}
+
+.top-infos-button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--gray-700);
+  cursor: pointer;
+  text-align: initial;
+  transition: color 0.2s linear;
+  padding: 10px 0px 10px 16px;
+}
+
+.top-infos-description-text {
+  width: 100%;
+  max-width: 715px;
+  margin-left: 32px;
+}
+
+.top-infos-context-sobre,
+.top-infos-context-pagamento,
+.top-infos-context-entrega,
+.top-infos-context-troca,
+.top-infos-context-seguranca,
+.top-infos-context-contato {
+  display: none;
+}
+.top-infos-context-sobre.is-open,
+.top-infos-context-pagamento.is-open,
+.top-infos-context-entrega.is-open,
+.top-infos-context-troca.is-open,
+.top-infos-context-seguranca.is-open,
+.top-infos-context-contato.is-open {
+  display: flex;
+}
+.top-infos-context-contato {
+  width: 100%;
+  max-width: 715px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-infos-image {
+    padding: 14px 0 32px 16px;
+  }
+  .top-infos-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+  .top-infos-buttons-wrapper {
+    max-width: 100%;
+  }
+  .top-infos-buttons {
+    border-right: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .top-infos-button.sobre,
+  .top-infos-button.pagamento,
+  .top-infos-button.entrega,
+  .top-infos-button.troca,
+  .top-infos-button.seguranca,
+  .top-infos-button.contato {
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-infos-button.sobre:active,
+  .top-infos-button.pagamento:active,
+  .top-infos-button.entrega:active,
+  .top-infos-button.troca:active,
+  .top-infos-button.seguranca:active,
+  .top-infos-button.contato:active {
+    color: var(--white);
+  }
+
+  .top-infos-button:hover {
+    color: var(--black);
+  }
+  .top-infos-button:active {
+    color: var(--gray-600);
+  }
+}

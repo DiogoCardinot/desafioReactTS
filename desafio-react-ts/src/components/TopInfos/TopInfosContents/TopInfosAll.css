@@ -1,0 +1,31 @@
+.top-infos-description-text {
+  width: 100%;
+  max-width: 715px;
+  margin-left: 32px;
+}
+.top-infos-description-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--gray-500);
+  margin-bottom: 12px;
+}
+.top-infos-description-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--gray-700);
+}
+
+@media screen and (max-width: 768px) {
+  .top-infos-description-text {
+    margin-left: 0px;
+  }
+  .top-infos-description-title {
+    text-align: center;
+  }
+}
