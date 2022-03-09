@@ -7,13 +7,15 @@ import { FooterLinksDesktop } from "./components/FooterLinks/FooterLinksDesktop"
 import { FooterLinksMobile } from "./components/FooterLinks/FooterLinksMobile";
 import { FooterDesktop } from "./components/Footer/FooterDesktop";
 import { FooterMobile } from "./components/Footer/FooterMobile";
+import { Buttons } from "./components/Buttons/Buttons";
 
-function App() {
+function Home() {
   return (
     <div>
       <Header />
       <TopInfos />
       <Newsletter />
+      <Buttons />
       <FooterLinksDesktop />
       <FooterLinksMobile />
       <FooterDesktop />
@@ -22,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

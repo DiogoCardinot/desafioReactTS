@@ -12,13 +12,16 @@
   color: var(--gray-500);
   margin-bottom: 12px;
 }
-.top-infos-description-content {
-  font-family: Roboto;
+.top-infos-description-content-desktop {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 15px;
   color: var(--gray-700);
+}
+.top-infos-description-content-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -27,5 +30,20 @@
   }
   .top-infos-description-title {
     text-align: center;
+  }
+  .top-infos-description-content-desktop {
+    display: none;
+  }
+  .top-infos-description-content-mobile {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    text-align: justify;
+
+    color: var(--gray-700);
   }
 }
