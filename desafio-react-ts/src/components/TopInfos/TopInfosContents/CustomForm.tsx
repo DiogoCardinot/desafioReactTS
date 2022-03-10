@@ -173,7 +173,7 @@ const CustomForm = () => {
                   checkboxVerify ? "is-open" : ""
                 }`}
               >
-                Por favor, leia os termos
+                Por favor, aceite os temos!
               </span>
             </div>
             <button
