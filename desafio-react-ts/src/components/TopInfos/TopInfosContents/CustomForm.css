@@ -51,10 +51,29 @@
 
 .form-checkbox {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 6px;
   margin-bottom: 20px;
+}
+.form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-checkbox-invalid {
+  display: none;
+}
+.form-checkbox-invalid.is-open {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -15px;
+  font-size: 12px;
+  margin-left: 15px;
+  color: red;
 }
 
 .form-checkbox-icon {
@@ -62,6 +81,41 @@
 }
 .form-checkbox-text {
   margin-right: 8px;
+}
+.form-checkbox-fake-input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.form-checkbox-checkbox {
+  display: block;
+  opacity: 0;
+}
+
+.form-checkbox-checkbox:checked + .form-checkbox-fake-input::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--blue-500);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.form-checkbox-fake-input {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--gray-100);
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.form-checkbox-fake-input.fail {
+  border-color: red;
 }
 
 .form-button-submit {
@@ -85,6 +139,7 @@
 
   color: var(--white);
 }
+
 .form-button-submit:hover {
   background: var(--blue-550);
 }

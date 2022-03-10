@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 
@@ -9,17 +9,16 @@ interface IFormikValues {
   name: string;
   email: string;
   cpf: string;
-  date: Date;
+  date: string;
   tel: string;
   instagram: string;
 }
-let data = new Date();
 
 const initialValues = {
   name: "",
   email: "",
   cpf: "",
-  date: data,
+  date: "",
   tel: "",
   instagram: "",
 };
@@ -27,6 +26,21 @@ const initialValues = {
 const CustomForm = () => {
   const handleFormikSubmit = (values: IFormikValues) => {
     console.log(values);
+  };
+  const [checkbox, setCheckbox] = useState(true);
+  const [checkboxVerify, setCheckboxVerify] = useState(false);
+  const toggleCheckbox = () => {
+    console.log(checkbox);
+    setCheckbox(!checkbox);
+  };
+  const submitCheckboxVerify = () => {
+    if (checkbox === true) {
+      setCheckboxVerify(true);
+      console.log("checkbox state" + checkboxVerify);
+    } else {
+      setCheckboxVerify(false);
+      console.log("checkbox state" + checkboxVerify);
+    }
   };
   return (
     <div className="form-wrapper">
@@ -136,11 +150,37 @@ const CustomForm = () => {
               />
             </div>
             <div className="form-checkbox">
-              <u className="form-checkbox-icon">*</u>
-              <u className="form-checkbox-text">Declaro que li e aceito</u>
-              <input type="checkbox" className="form-checkbox-checkbox" />
+              <div className="form-checkbox-wrapper">
+                <u className="form-checkbox-icon">*</u>
+                <u className="form-checkbox-text">Declaro que li e aceito</u>
+                <div className="form-checkbox-fake-input-wrapper">
+                  <input
+                    type="checkbox"
+                    className="form-checkbox-checkbox"
+                    onChange={toggleCheckbox}
+                  />
+                  <div
+                    className={`form-checkbox-fake-input ${
+                      checkboxVerify ? "fail" : ""
+                    }`}
+                    onChange={toggleCheckbox}
+                  ></div>
+                </div>
+              </div>
+
+              <span
+                className={`form-checkbox-invalid ${
+                  checkboxVerify ? "is-open" : ""
+                }`}
+              >
+                Por favor, leia os termos
+              </span>
             </div>
-            <button type="submit" className="form-button-submit">
+            <button
+              type="submit"
+              className="form-button-submit"
+              onClick={submitCheckboxVerify}
+            >
               CADASTRE-SE
             </button>
           </Form>

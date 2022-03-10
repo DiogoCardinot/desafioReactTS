@@ -96,8 +96,6 @@
 .top-infos-context-seguranca.is-open,
 .top-infos-context-contato.is-open {
   display: flex;
-}
-.top-infos-context-contato {
   width: 100%;
   max-width: 715px;
 }

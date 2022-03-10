@@ -1,5 +1,10 @@
 import * as Yup from "yup";
-import { cpf, instagram, phoneNumber } from "../TopInfosContents/Parametros";
+import {
+  cpf,
+  data,
+  instagram,
+  phoneNumber,
+} from "../TopInfosContents/Parametros";
 
 export default Yup.object().shape({
   name: Yup.string()
@@ -9,7 +14,9 @@ export default Yup.object().shape({
   cpf: Yup.string()
     .required("Campo obrigatório")
     .matches(cpf, "Formato de CPF inválido"),
-  date: Yup.string().required("Campo obrigatório"),
+  date: Yup.string()
+    .required("Campo obrigatório")
+    .matches(data, "Formato de data inválido"),
   tel: Yup.string()
     .required("Campo Obrigatório")
     .matches(phoneNumber, "Formato de número Inválido"),
