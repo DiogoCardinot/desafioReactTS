@@ -1,0 +1,88 @@
+.footer-links-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px 28px;
+  justify-content: space-between;
+}
+.footer-links-mobile-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links-mobile-item {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.footer-links-mobile-item-wrapper-institutional,
+.footer-links-mobile-item-wrapper-saiba-mais,
+.footer-links-mobile-item-wrapper-fale-conosco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-links-item-wrapper-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gray-500);
+  background: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-links-item-wrapper-span-veja-menos,
+.footer-links-item-wrapper-span.see-more {
+  display: none;
+}
+
+.footer-links-item-wrapper-span,
+.footer-links-item-wrapper-span-veja-menos.see-less {
+  display: flex;
+  color: var(--black);
+  border-top: 2px solid;
+  width: 10px;
+}
+.footer-links-item-wrapper-span::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: currentColor; /*pega a cor que está no hamburguer button */
+  transform: rotate(90deg);
+  transition: 0.3s;
+  position: relative;
+  top: -2px;
+}
+.footer-links-item-institutional-content,
+.footer-links-item-duvidas-content,
+.footer-links-item-faleconosco-content {
+  display: none;
+}
+.footer-links-item-institutional-content.isopen,
+.footer-links-item-duvidas-content.isopen,
+.footer-links-item-faleconosco-content.isopen {
+  display: flex;
+}
+
+.footer-links-mobile-social-newtwork {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+}
+.footer-links-mobile-social-network-icon {
+  list-style: none;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .footer-links-mobile-wrapper {
+    display: none;
+  }
+}
